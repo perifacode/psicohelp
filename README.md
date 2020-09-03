@@ -7,7 +7,7 @@ A Psicohelp é uma plataforma open-source, mantida pela comunidade da perifaCode
 
 ## Layout 👩🏼‍🎨
 
-Todo o layout do projeto está hospedado no Figma epode ser acessado clicando [aqui](https://www.figma.com/file/eLKfwHv4MvcapMfijFCcFi/Psicohelp).
+Todo o layout do projeto está hospedado no Figma e pode ser acessado clicando [aqui](https://www.figma.com/file/eLKfwHv4MvcapMfijFCcFi/Psicohelp).
 
 ---
 
