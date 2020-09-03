@@ -22,7 +22,7 @@ Todo o layout do projeto está hospedado no Figma epode ser acessado clicando [a
 
 Para poder começar a contribuir com o projeto, você precisa ter instalado em sua máquina.
 
-- PHP 7.x
-- Apache ou outro servidor web
-- Node 12.x
-- NPM ou Yarn
+- `PHP 7.x`
+- `Apache ou outro servidor web`
+- `Node 12.x`
+- `NPM ou Yarn`
