@@ -17,6 +17,9 @@ Todo o layout do projeto está hospedado no Figma e pode ser acessado clicando [
 - CSS
 - Javascript
 - PHP
+- Sass
+- Gulp.js
+
 
 ## Setup inicial do projeto 🚧
 
