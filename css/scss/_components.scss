@@ -1,0 +1,29 @@
+.btn-primary {
+  font-family: $primary-font;
+  font-size: 14px;
+  background-color: $primary-color;
+  color: $white;
+  border: none;
+  border-radius: 15px;
+  height: 35px;
+  width: 145px;
+  margin-top: 1rem;
+}
+
+.input-field {
+  border: none;
+  color: $light-grey;
+  box-shadow: 5px 5px 10px $medium-grey;
+  height: 35px;
+  border-radius: 20px;
+  padding-left: 15px;
+  width: 300px;
+}
+
+.circle-top {
+  width: 200px;
+  height: 200px;
+  clip-path: circle(62.1% at 0 4%);
+  background-color: $primary-color;
+  position: fixed;
+}
