@@ -50,12 +50,6 @@ export const Container = styled.div`
       color: #cccccc;
     }
   }
-
-  @media (max-width: 600px) {
-    form {
-      width: 350px;
-    }
-  }
 `;
 export const ButtaoCadastrar = styled.button`
   width: 179px;
@@ -72,11 +66,11 @@ export const ContainerDuasColunas = styled.div`
   display: flex;
   .cidade {
     width: 100%;
-    margin-right: 20px;
+    margin-right: 10px;
   }
   .uf {
     width: 50%;
-    margin-left: 20px;
+    margin-left: 10px;
   }
 `;
 export const Logo = styled.img`

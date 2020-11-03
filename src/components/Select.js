@@ -1,8 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import ReactSelect, {
-  OptionTypeBase,
-  Props as SelectProps,
-} from "react-select";
+import ReactSelect from "react-select";
 import { useField } from "@unform/core";
 
 const Select = ({ name, ...rest }) => {

@@ -2,6 +2,13 @@ import React from "react";
 import { Container, Contato, Plano, Descricao, NomePsicologo } from "./styled";
 import MaterialModal from "@material-ui/core/Modal";
 
+/**
+ * Componente modal que renderiza um psicologo selecionado pelo usuário
+ *
+ * @param {*} psicologo - objeto contendo os dados do psicologo
+ * @param {*} abrir - flag com status do modal
+ * @param {*} fecharModal - função que fecha o modal
+ */
 export default function Modal({ psicologo, abrir, fecharModal }) {
   return (
     <MaterialModal
