@@ -31,7 +31,6 @@ export const Container = styled.div`
 
   img {
     position: absolute;
-    background: steelblue;
     max-width: 200px;
     width: 100%;
     left: 0;
@@ -57,6 +56,15 @@ export const Container = styled.div`
     h4 {
       margin: 5px 0 5px 0;
       color: #7c7c7c;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 0 10px 0 10px;
+
+    img {
+      max-width: 100px;
+      bottom: 350px;
     }
   }
 `;

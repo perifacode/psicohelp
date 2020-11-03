@@ -35,13 +35,13 @@ export const Container = styled.div`
     main {
       display: flex;
       flex-direction: column;
-      padding: 10px;
+      padding: 100px 10px 50px 10px;
     }
   }
 `;
 
 export const InputBuscar = styled.input`
-  width: 612px;
+  width: 100%;
   height: 61px;
   background: #ffffff;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
@@ -51,14 +51,16 @@ export const InputBuscar = styled.input`
   ::placeholder {
     color: #e5e5e5;
   }
-
-  @media (max-width: 768px) {
-    width: 100%;
-  }
 `;
 
 export const Logo = styled.img`
   align-self: flex-start;
   width: 173px;
   height: 44px;
+`;
+export const ContainerHeader = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 612px;
 `;

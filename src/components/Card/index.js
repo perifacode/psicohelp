@@ -1,6 +1,15 @@
 import React from "react";
 import { Container } from "./styled";
 
+/**
+ * Componente card que renderiza um psicologo
+ *
+ * @param {*} imageUrl - url da image
+ * @param {*} nome - nome do psicologo
+ * @param {*} plano - tipo de plano
+ * @param {*} endereco - nome da rua
+ *
+ */
 export default function Card({ imagemUrl, nome, plano, endereco, ...rest }) {
   return (
     <Container {...rest} type="button">

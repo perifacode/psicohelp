@@ -12,10 +12,15 @@ import Select from "../../components/Select";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import * as Yup from "yup";
+import { useHistory } from "react-router-dom";
 
 export default function Registrar() {
+  //hook de navegaçãos
+  const history = useHistory();
+
   async function handleSubmit(data, { reset }) {
     try {
+      //yup e uma ferramenta utilizada para validação dos campos de um formulario
       const schema = Yup.object().shape({
         nome: Yup.string().required("Informe o nome"),
         email: Yup.string()
@@ -31,11 +36,21 @@ export default function Registrar() {
       await schema.validate(data, {
         abortEarly: false,
       });
+
+      //apresenta mensagem de sucesso
       toast.success("Cadastrado com sucesso");
-      reset();
+
+      setTimeout(() => {
+        //reseta valores do formulario
+        reset();
+        //navega para tela inicial
+        history.push("/");
+      }, 2000);
     } catch (err) {
       if (err instanceof Yup.ValidationError) {
         const mensagem = err.inner[0].message;
+        //apresenta mensagem de erro, caso algum campo do
+        //formulario não esteja conforme solicitado
         toast.error(mensagem);
       }
     }

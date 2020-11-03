@@ -1,19 +1,30 @@
 import React, { useState, useEffect } from "react";
-import { Container, BotaoBuscar, InputBuscar, Logo } from "./styled";
+import { Container, InputBuscar, Logo, ContainerHeader } from "./styled";
 import logo from "../../assets/logo.svg";
 import Card from "../../components/Card";
 import axios from "axios";
 import Modal from "../../components/Modal";
 
 export default function Pesquisar() {
+  //hooks são funcoes que armazenam logicas que facilita a utilização
+  //de determinadas lógicas
+
+  //armazena a lista de psicologos
   const [psicologos, setPsicologos] = useState([]);
+
+  //armazena o psicologo selecionado pelo usuário
   const [psicologo, setPsicologo] = useState({});
+
+  //flag que armazena o estado do modal, `visivel` ou `oculto`
   const [modal, setModal] = useState(false);
 
+  //funcao que busca os psicologos cadastrados
+  //*utlizado dados fake, pois ainda não foi implementado o back-end*
   function buscarPsicologos() {
     axios
       .get("https://randomuser.me/api/?nat=br&results=13")
       .then((response) => {
+        //seta a lista de psicologos dentro do array `psicologos`
         setPsicologos(response.data.results);
       });
   }
@@ -27,16 +38,18 @@ export default function Pesquisar() {
     setModal(false);
   }
 
+  //hook executado todas as vezes que a tela e aberta
   useEffect(() => {
     buscarPsicologos();
   }, []);
+
   return (
     <Container>
       <header>
-        <div style={{ display: "flex", flexDirection: "column" }}>
+        <ContainerHeader>
           <Logo src={logo} />
           <InputBuscar placeholder="Digite seu endereço" />
-        </div>
+        </ContainerHeader>
       </header>
 
       <main>

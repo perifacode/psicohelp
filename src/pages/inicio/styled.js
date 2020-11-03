@@ -9,7 +9,6 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   height: 100vh;
-  position: relative;
 `;
 export const BotaoBuscar = styled.a`
   background: #0f4c81;
@@ -34,7 +33,7 @@ export const BotaoRegistrar = styled.a`
   margin-top: 20px;
 `;
 export const InputBuscar = styled.input`
-  width: 612px;
+  width: 100%;
   height: 61px;
   background: #ffffff;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
